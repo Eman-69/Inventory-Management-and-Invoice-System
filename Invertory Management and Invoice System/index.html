@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css"> 
+    </head>
+    <body>
+        <h1 align="center">Login Page</h1>
+        <center class="container">
+            <form action="login.php" method="post">
+                <table class="logintable">
+                    <tr>
+                        <th>Mobile No</th>
+                        <td>:</td>
+                        <td><input name="phone"  type="text"  id="phone" placeholder="Phone" maxlength="10" autocomplete="off" required></td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>:</td>
+                        <td><input name="password" type="password" id="password" placeholder="Password" required></td>
+                    </tr>
+                </table>
+                <button type="submit" name="submit" onclick="return Validate()">Login</button>
+                </form>
+
+            <p><strong>New to this System?<a href="SignUp.html">Sign Up</strong></a></p>
+        </center>
+        <div class="logo">electra<br> erp</div>
+<script>
+            function Validate() {
+                var PositionPage1 = document.getElementById("phone");
+                var PositionPage2 = document.getElementById("password");
+                if (PositionPage2.value == "") {
+                    //If the "Please Select" option is selected display error.
+                    alert("Please Enter the Password!");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

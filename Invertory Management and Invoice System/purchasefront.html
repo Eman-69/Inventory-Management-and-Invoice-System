@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Purchase Details:</title>
+    <link rel="stylesheet" href="css/Purchase.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+    <form action="purchase.php" method="post">
+        <h1>Purchase Details</h1>
+        <div class="Signup">
+            <div class="ct1">
+                <label><b>Invoice Number:</b></label>
+                <input name='invno'type="text" placeholder="" autofocus="autofocus" autocomplete="off" required>
+            </div>
+
+            <div class="ct1">
+                <label><b>Invoice Date<br></b></label>
+                <input name='invdate'type="date" autocomplete="off" required>
+            </div>
+            <div class="ct1">
+            <label><b>Distributor Name:</b></label>
+            <input name='disname' type="text" placeholder="" autocomplete="on" required>
+            </div>
+            <div class="ct1">
+                <label><b>Brand:<br></b></label>
+                <input name="brand"type="text" autocomplete="on" required>
+
+                <label><b>Base Price:<br></b></label>
+                <input name="bprice" type="text" autocomplete="off" required>
+            </div>
+            <div class="ct1">
+                <label><b>Model:<br></b></label>
+                <input name="model" type="text" autocomplete="on" required>
+                <label><b>Quantity:<br></b></label>
+                <input name="quantity" type="number" autocomplete="off" required>
+            </div>
+        <button type="submit" name="addentry">CHECK PID</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

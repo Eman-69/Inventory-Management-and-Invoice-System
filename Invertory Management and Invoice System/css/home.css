@@ -1,0 +1,145 @@
+*
+{
+    padding: 0;
+    margin:0;
+}
+@font-face {
+    font-family: typo_round;
+    src: 
+        url('../font/typo-round/Typo_Round_Bold_Demo.otf');
+}
+@font-face {
+    font-family: organo;
+    src: 
+        url('../font/Organo.ttf');
+}
+body
+{
+    font-family: typo_round;
+    background: #c0e0f6 url('../img/bg.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    font-size:35px;
+    color: white;
+}
+.nostock
+{
+    width: 100%;
+    z-index: 100;
+    background-color: #ff6961;
+}
+.nostock span
+{
+    margin-left: 20px;
+}
+.signoutform
+{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top:2%;
+    right:1%;
+}
+.signout
+{
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: white;
+    border:1px solid white; 
+    box-shadow: 2px 2px 10px darkgray;
+
+}
+.signoutform:hover
+{
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+.popup
+{
+    position: fixed;
+    background: #6a331b;   
+    bottom: 1%;
+    right: 1%;
+    z-index: 10;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+#closebtn
+{
+    margin:-30px 10px;
+    float: right;   
+    cursor: pointer;;
+}
+.popup table
+{
+    
+    font-size: 30px;
+    border-spacing: 10px;
+}
+.popup input
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.popup button
+{
+    margin-top: 20px;
+    padding: 10px 75px;
+    cursor: pointer;
+    border: 3px solid #a9a9a9;
+    background: rgba(237, 231, 225, 1);
+}
+.popup button:hover
+{
+    
+    background: rgba(237, 231, 225, 0.3);
+}
+.logo
+{
+    font-size: 100px;
+    font-family: organo;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    color:white;
+    text-shadow: 5px 10px #6a331b;
+}
+.container
+{
+    position: absolute;
+    right: 5%;
+}
+.containertable
+{
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    margin-top:180px;
+    border-spacing: 30px;
+    border:2px solid #f2f2f2;
+    box-shadow: 2px 2px 10px darkgrey;
+}
+.containertable:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.tablerow
+{
+}
+.tablerow td
+{
+    text-align: center;
+    background: #c0e0f6;
+    padding: 15% 0;
+    width: 300px;
+    border-radius: 15px;
+    text-shadow: 2px 2px black;
+    
+}
+.tablerow td:hover{
+    transition: 0.1s ease-in-out;
+    transform: scale(1.1);
+}

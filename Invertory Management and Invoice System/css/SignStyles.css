@@ -1,0 +1,152 @@
+@font-face {
+  font-family: typo_round;
+  src: 
+      url('../font/typo-round/Typo_Round_Bold_Demo.otf');
+}
+@font-face {
+  font-family: organo;
+  src: 
+      url('../font/Organo.ttf');
+} 
+ 
+ * {
+    box-sizing: border-box;
+  }
+body{
+  font-family: typo_round;
+  overflow-y: hidden;
+  background:url('../img/log.jpg');
+  background-size: 100%;
+  margin: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  height: 100vh;
+  }
+  .logo
+{
+    color: rgb(27, 26, 26);
+    font-size:50px;
+    font-family: organo;
+    position: absolute;
+    right: 3%;
+    top: 5%;  
+    text-shadow: 2px 5px rgba(220, 220, 220, 0.987);  
+}
+  p{
+    padding-block: 80px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+h1{
+     font-size: 50px;
+     font-weight: 600;
+     display:inline;
+     border-bottom: 3px solid whitesmoke;
+}
+
+div.Signup{
+  margin-top: 50px;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+    color:black;
+    display: flex;
+    
+}
+div.ct{
+  padding-right: 100px;
+  padding-top: 10px;
+  width:50%;
+  float:left;
+}
+
+div.ct1{
+  padding-right:100px;
+  padding-top: 10px;
+  width:50%;
+  float:left;
+}
+
+div.ct2{
+  padding-right: 100px;
+}
+  .bg-img {
+    /* Center and scale the image nicely */
+    background-size: cover;
+    background-position: center;
+    background-repeat:none;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+
+    max-width: 800px;
+    opacity: 0.9;
+    padding-left: 20px;
+  }
+  /* Full-width input fields */
+    input[type=text], input[type=password],input[type=email],input[type=number] {
+    width: 100%;
+
+    padding: 8px;
+    font-size: medium;
+    margin: 4px 0 20px 0;
+    border: none;
+    background: whitesmoke;
+    opacity: 0.9;
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.3) ;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=number]:focus {
+    font-size: medium;
+
+    background-color: whitesmoke;
+    outline: none;
+    opacity: 0.9;
+  }
+  select{
+    width: 100%;
+    padding: 8px;
+
+    font-size: medium;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: whitesmoke;
+    opacity: 0.9;
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.3) ;
+  }
+  select:focus{
+    font-size: medium;
+    background-color: whitesmoke;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  button[type=submit]{
+    background-color:black;
+    color: whitesmoke;
+    font-size: medium;
+    float:right;
+    margin-right:30px;
+    margin-top:30px;
+    padding: 14px;
+    cursor: pointer;
+    width: 30%;
+  }
+  button[type=reset]{
+    background-color:black;
+    color: whitesmoke;
+    font-size: medium;
+    margin-left:30px;
+    margin-top:30px;
+    padding: 14px;
+    cursor: pointer;
+    float:left;
+    width: 30%;
+  }
+  button[type=submit]:hover, button[type=reset]:hover {
+    background-color: rgb(48, 44, 44);
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/SignStyles.css">
+</head>
+<body>
+    <h1>Sign Up</h1>    
+    <div class="logo">electra erp</div>
+    <form  action="signup.php" method="post">
+    <div class="Signup">
+        <div class="container">
+          <div class="ct">
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="" name="fname" autocomplete="off" required>
+
+          <label><b>Email</b></label>
+          <input type="email" placeholder=""  name="email" autocomplete="off" required>
+
+        </div>
+        <div class="ct1">
+          <label><b>Last Name<br></b></label>
+          <input type="text" placeholder="" name="lname" autocomplete="off" required>
+
+          <label><b>Phone Number</b></label>
+          <input type="number" placeholder="" name="phonenumber" maxlength="10" autocomplete="off" required>
+        </div>
+        <div class="ct2">
+          <label for="Position"><b>Choose Position:</b><br></label>
+          <select name="Position" id="position">
+            <option value="">--Choose--</option>
+            <option value="1">User</option>
+            <option value="2">Admin</option>
+          </select>
+           <br>
+          <label><b>Password</b></label>
+          <input type="password" name="password" placeholder="" required>
+
+          <label><b>Confirm Password</b></label>
+          <input type="password" name="confirmpassword" placeholder="" required>
+
+          <button type="submit" name="submit" onclick="return Validate()">Sign Up</button>
+          <button type="reset">Reset</button>
+        </div>
+          <p>Already have an Account? <a href="index.html">Login</a></p>
+        </div>
+     </div>
+     </form>
+
+
+       <script type="text/javascript">
+        function Validate() {
+          var PositionPage = document.getElementById("position");
+          if (PositionPage.value == "") {
+              //If the "Please Select" option is selected display error.
+              alert("Please Select the Position!!!");
+              return false;
+          }
+          return true;
+      }
+       </script>
+
+       
+</body>
+</html>
