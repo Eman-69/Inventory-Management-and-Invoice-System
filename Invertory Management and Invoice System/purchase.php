@@ -60,7 +60,8 @@ if(isset($_POST['addentry']))
         else if($nr==0)
         {
             $_SESSION['nopid']=1;
-            header("Location:purchasefront2.html");
+            // header("Location:purchasefront2.html");
+            echo "<script>location.replace('purchasefront2.html')</script>";
             echo "nr0 sql1";
         }
     } 
